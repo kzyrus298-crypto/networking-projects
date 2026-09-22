@@ -15,9 +15,14 @@ Firewall placed at the network edge to inspect inbound traffic from outside
 
 Concepts Covered
 VLSM (Variable Length Subnet Masking) — used to plan and assign IP addressing efficiently across the network
-Switch Redundancy — a third switch was added to provide a backup path, so if one link or switch goes down, traffic can still reach its destination through the alternate path (this is the kind of scenario STP/RSTP normally manages so the redundant path doesn't cause a loop)
+
+Switch Redundancy — a third switch was added to provide a backup path, so if one link or switch goes down, traffic can still reach its destination through the
+alternate path (this is the kind of scenario STP/RSTP normally manages so the redundant path doesn't cause a loop)
+
 EtherChannel — multiple physical links between switches were bundled into a single logical link, so if one link fails, the connection stays up through the remaining link(s) instead of going down completely
+
 Firewall / Perimeter Security — a firewall was placed between the internal network and the outside connection to inspect incoming traffic (e.g. ping/ICMP requests) and control what is allowed in, protecting the internal network from unsolicited external traffic
+
 Configuration Highlights
 IP addressing assigned via VLSM based on host requirements per segment
 Switch-to-switch links configured with EtherChannel (Layer 2 link aggregation)
