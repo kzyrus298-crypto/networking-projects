@@ -30,6 +30,10 @@ Devices: 4 routers (2911), 4 switches (2960), PCs, and servers.
 | LAN D | `2001:DB8:D::/64` | R4 `::1`, Srv-D1 `::10`, Srv-D2 `::20`, PC-D1 `::11` |
 | Anycast | `2001:DB8:100::53/128` | Loopback0 on R2 and R3 |
 
+## Topology
+<img width="1785" height="696" alt="Screenshot 2026-10-26 192122" src="https://github.com/user-attachments/assets/6c02ad78-223b-4b51-9cc6-3e2eb7041fe8" />
+
+
 ## Routing
 
 Routing between all sites is done with OSPFv3 (area 0) on R1, R2, R3, and R4, with no static IPv6 routes. The LANs and the anycast loopbacks of R2 and R3 are learned by OSPFv3, so the network decides the path by itself.
