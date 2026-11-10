@@ -17,9 +17,7 @@ Three sites (Staff, HQ/Core, Server) are connected in a line. Every LAN and ever
 | HQ / Core | R2 (HQ/CORE) | 192.168.20.0/24, 2001:db8:acad:20::/64 | ADMIN PC |
 | Server site | R3 (SERVER_SITE) | 192.168.30.0/24, 2001:db8:acad:30::/64 | WEB/FTP server |
 
-## Topology
 
-![Topology](images/topology.png)
 
 ## Addressing table
 
@@ -130,23 +128,7 @@ Each result below matched the policy and has a screenshot.
 
 ### Evidence
 
-| STAFF to web server over HTTP (IPv4) | STAFF to web server over HTTP (IPv6) |
-<img width="1917" height="1011" alt="Screenshot 2026-11-10 134529" src="https://github.com/user-attachments/assets/2435595f-bae3-47c5-ab4d-02d8bdc142b6" />
-
-<img width="1917" height="1011" alt="Screenshot 2026-11-10 134529" src="https://github.com/user-attachments/assets/d52b526c-e6e8-49e7-8ad3-08b1ad83e6bc" />
-
-
-
-
-| CONTRACTOR to web server (IPv4) | CONTRACTOR to web server (IPv6) |
-<img width="1917" height="1016" alt="Screenshot 2026-11-10 134404" src="https://github.com/user-attachments/assets/accf5bfb-154a-404c-9eb4-b5d1bc9e85a2" />
-<img width="1917" height="961" alt="Screenshot 2026-11-10 134551" src="https://github.com/user-attachments/assets/9276a8d6-05d4-40db-9331-4312866034b2" />
-
-
-
-STAFF pinging the web server is rejected by R1 itself (the reply comes from R1's LAN address), and pinging the ADMIN PC over IPv6 succeeds:
-<img width="702" height="956" alt="Screenshot 2026-11-10 134259" src="https://github.com/user-attachments/assets/c9491afa-0ee3-4124-9eed-04f3be3afb4f" />
-<img width="773" height="938" alt="Screenshot 2026-11-10 140339" src="https://github.com/user-attachments/assets/5a9f0c34-9810-47b1-a7f0-92763ef83ef3" />
+For the pictures i'll make another folder for that.
 
 
 
